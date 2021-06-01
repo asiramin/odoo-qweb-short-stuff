@@ -1,0 +1,2 @@
+2 decimal places amount:
+t-esc="'{0:,.2f}'.format(float(table_line.x_studio_amount_r_1))"
