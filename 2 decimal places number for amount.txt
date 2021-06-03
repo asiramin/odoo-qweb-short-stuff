@@ -1,2 +1,8 @@
 2 decimal places amount:
 t-esc="'{0:,.2f}'.format(float(table_line.x_studio_amount_r_1))"
+
+
+splitting text in qweb:
+<t t-set="uom" t-value="str(table_line.product_uom_id.name).split(' ')"/>
+<t t-set="singleuom" t-value="str(uom[1]).split(')')"/>
+<span t-esc="singleuom[0]"/>
